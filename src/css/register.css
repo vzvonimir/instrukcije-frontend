@@ -1,0 +1,22 @@
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(108, 99, 255);
+}
+
+  .logo {
+    font-size: 2rem;
+    margin-bottom: 20px; 
+    color: rgb(224, 224, 224);
+  }
+  
+  .register-form {
+    border: 2px solid #333;
+    background-color: rgb(224,224,224);
+    box-shadow: 0 20px 30px rgba(0,0,0,.2);
+    padding: 20px;
+    width: 400px;
+  }
