@@ -1,0 +1,8 @@
+.custom-sidepanel{
+    --bs-bg-opacity: 1;
+    background-image: radial-gradient(rgb(108, 99, 255), rgb(135, 128, 252));
+    padding: 1.5rem!important;
+    margin-top: 1.5rem;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 20px;
+}
