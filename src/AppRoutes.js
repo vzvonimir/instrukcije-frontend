@@ -4,6 +4,7 @@ import Register from './pages/Register';
 import ForgotPassword from './pages/ForgotPassword';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
+import AdminPanel from './pages/AdminPanel';
 
 function AppRoutes(){
     return (
@@ -14,6 +15,7 @@ function AppRoutes(){
                 <Route path="/forgot-password" element={<ForgotPassword />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/profile/*" element={<Profile />} />
+                <Route path="/admin-panel/*" element={<AdminPanel />} />
             </Routes>
         </Router>
     );

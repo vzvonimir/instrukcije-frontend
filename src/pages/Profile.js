@@ -8,6 +8,7 @@ import EditProfile from '../components/EditProfile';
 import ChangePassword from '../components/ChangePassword';
 import Services from '../components/services/Services';
 import AddService from '../components/services/AddService';
+import EditService from '../components/services/EditService';
 
 function Profile() {
   const location = useLocation();
@@ -58,6 +59,7 @@ function Profile() {
               <Route path="/change-password" element={<ChangePassword />} />
               <Route path="/services" element={<Services />} />
               <Route path="/services/new" element={<AddService />} />
+              <Route path="/services/:serviceId" element={<EditService />} />
             </Routes>
           </div>
         </div>

@@ -1,0 +1,88 @@
+.admin-sidebar {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #343a40;
+  color: #ffffff; 
+  padding-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-sidebar-navbar {
+  background-color: #343a40; 
+}
+
+.admin-sidebar-logo {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem !important;
+  color: rgb(108,99,255) !important;
+}
+
+.side-link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s, border-bottom-color 0.3s; 
+  padding: 10px; 
+  display: inline-block; 
+  width: 100%;
+  text-align: left; 
+}
+
+.active {
+  color: rgb(108, 99, 255); 
+  border-bottom: 1px solid rgb(108, 99, 255); 
+}
+
+.side-link:hover {
+  color: rgb(108, 99, 255); 
+  border-bottom: 1px solid rgb(108, 99, 255);
+}
+
+.side-icon {
+  margin-right: 10px;
+}
+
+.admin-settings{
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s, border-bottom-color 0.3s; 
+  padding: 10px; 
+  display: inline-block; 
+  width: 100%;
+  text-align: left; 
+}
+
+.admin-settings:hover{
+  color: rgb(108, 99, 255); 
+  border: 1px solid rgb(108, 99, 255);
+}
+
+.custom-dropdown .dropdown-toggle::after {
+  content: none;
+}
+
+.custom-dropdown{
+  margin-top: auto;
+}
+
+.custom-color{
+  color:rgb(108, 99, 255);
+}
+
+.custom-content{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 15px;
+  min-height: 93vh;
+}
+
+.custom-nav1{
+  padding-left: 0 !important;
+}

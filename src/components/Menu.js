@@ -61,10 +61,10 @@ function Menu({ user }){
                 <Nav.Link href="#action2">Contact</Nav.Link>
                 </Nav>
                 <NavDropdown title={user ? <UsernameWithIcon user={user} /> : "Username"} id="navbarScrollingDropdown" align="end">
-                    {(user.role === '3' || user.role === '2') && (
                        <NavDropdown.Item onClick={() => navigate('/profile')}>Profile</NavDropdown.Item>
-                    )}
-                    <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                       {user && user.role === '1' &&(
+                         <NavDropdown.Item onClick={() => navigate('/admin-panel')}>Admin Panel</NavDropdown.Item>
+                       )}
                     <NavDropdown.Divider />
                     <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
                 </NavDropdown>
