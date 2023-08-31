@@ -28,7 +28,7 @@ function UserSidePanel({user}) {
         >
           Change Password
         </NavLink>
-        {user.role === '3' && (
+        {(user.role === '1' || user.role === '3') && (
           <NavLink
             to="/profile/services"
             className={`link-hover-underline ${location.pathname.includes('/services') ? 'active' : ''}`}

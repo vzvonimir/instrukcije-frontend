@@ -65,6 +65,7 @@ function AddService() {
             </label>
             <div className="col-sm-9">
                 <select className="form-select" id="category" name="category_id" onChange={handleChange}>
+                <option value="">Choose a category</option>
                   {categories.map((category) => (
                     <option key={category.id} value={category.id}>
                       {category.name}
@@ -79,6 +80,7 @@ function AddService() {
             </label>
             <div className="col-sm-9">
                 <select className="form-select" id="subject" name="subject_id" onChange={handleChange}>
+                <option value="">Choose a subject</option>
                   {subjects.map((subject) => (
                     <option key={subject.id} value={subject.id}>
                       {subject.name}

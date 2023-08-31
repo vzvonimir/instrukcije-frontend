@@ -129,9 +129,9 @@ function AdminUsers() {
                   )}
                 </td>
                 <td className='text-center'>
-                  <button onClick={() => openBanModal(user.id)} className="btn btn-warning ms-2"><FaBan /></button>
-                  <button className="btn btn-secondary ms-2"><FaUserCog /></button>
-                  <button onClick={() => openDeleteModal(user.id)} className="btn btn-danger ms-2"><FaTrash /></button>
+                  <button onClick={() => openBanModal(user.id)} className="btn btn-warning ms-2" title="Ban User"><FaBan /></button>
+                  <button className="btn btn-secondary ms-2" title="Update Role"><FaUserCog /></button>
+                  <button onClick={() => openDeleteModal(user.id)} className="btn btn-danger ms-2" title="Delete User"><FaTrash /></button>
                 </td>
               </tr>
             ))}
