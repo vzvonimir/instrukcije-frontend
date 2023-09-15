@@ -56,9 +56,7 @@ function Menu({ user }){
                 style={{ maxHeight: '100px' }}
                 navbarScroll
                 >
-                <Nav.Link href="#action1">Subjects</Nav.Link>
-                <Nav.Link href="#action2">Instructors</Nav.Link>
-                <Nav.Link href="#action2">Contact</Nav.Link>
+                
                 </Nav>
                 <NavDropdown title={user ? <UsernameWithIcon user={user} /> : "Username"} id="navbarScrollingDropdown" align="end">
                        <NavDropdown.Item onClick={() => navigate('/profile')}>Profile</NavDropdown.Item>

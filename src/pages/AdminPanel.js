@@ -4,6 +4,12 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import AdminSidePanel from '../components/admin/AdminSidePanel';
 import AdminUsers from '../components/admin/AdminUsers';
 import '../css/admin-css/adminsidepanel.css';
+import Categories from '../components/admin/Categories';
+import AddCategory from '../components/admin/AddCategory';
+import EditCategory from '../components/admin/EditCategory';
+import Subjects from '../components/admin/Subjects';
+import AddSubject from '../components/admin/AddSubject';
+import EditSubject from '../components/admin/EditSubject';
 
 function AdminPanel() {
   const location = useLocation();
@@ -46,6 +52,12 @@ function AdminPanel() {
           <div className="col-sm-9">
             <Routes location={location}>
                 <Route path="/" element={<AdminUsers />} />
+                <Route path="/categories" element={<Categories />} />
+                <Route path="/categories/new" element={<AddCategory />} />
+                <Route path="/categories/:categoryId" element={<EditCategory />} />
+                <Route path="/subjects" element={<Subjects />} />
+                <Route path="/subjects/new" element={<AddSubject />} />
+                <Route path="/subjects/:subjectId" element={<EditSubject />} />
             </Routes>
           </div>
         </div>

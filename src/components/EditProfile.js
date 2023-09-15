@@ -16,20 +16,33 @@ function EditProfile({user, updateUserData }) {
         address: user.address,
         phone: user.phone,
         description: user.description,
+        profile_picture: ''
       });
   
       const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prevData) => ({
-          ...prevData,
-          [name]: value,
-        }));
+        const { name, value, type, files } = e.target;
+        
+        if (type === "file") {
+          setFormData((prevData) => ({
+            ...prevData,
+            [name]: files[0],
+          }));
+        } else {
+          setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+          }));
+        }
       };
     
       const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-          await api.post('/updateUser', formData);
+          await api.post('/updateUser', formData, {
+            headers: {
+              'Content-Type': 'multipart/form-data',
+            },
+          });
           updateUserData(formData);
           navigate('/profile');
           toast.success('User successfully updated.', {
@@ -152,6 +165,22 @@ function EditProfile({user, updateUserData }) {
                     onChange={handleChange}
                     rows="3"
                 />
+            </div>
+          </div>
+
+          <div className="row mb-3">
+            <label htmlFor="profilePicture" className="col-sm-3 col-form-label">
+                Profile Picture:
+            </label>
+            <div className="col-sm-9">
+              <input
+                type="file"
+                className="form-control-file"
+                id="profilePicture"
+                name="profile_picture"
+                accept="image/jpeg, image/png, image/jpg, image/gif"
+                onChange={handleChange}
+              />
             </div>
           </div>
           

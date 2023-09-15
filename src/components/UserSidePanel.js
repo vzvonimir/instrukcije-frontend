@@ -36,6 +36,14 @@ function UserSidePanel({user}) {
             Services
           </NavLink>
         )}
+        {(user.role === '1' || user.role === '2') && (
+          <NavLink
+            to="/profile/favorites"
+            className={`link-hover-underline ${location.pathname.includes('/favorites') ? 'active' : ''}`}
+          >
+            Favorites
+          </NavLink>
+        )}
         </div>
       </div>
     );

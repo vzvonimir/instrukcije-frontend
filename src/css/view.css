@@ -1,0 +1,97 @@
+.view-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5; /* Set your desired background color */
+  }
+  
+  .center-content {
+    width: 80%;
+    max-width: 1200px;
+    border: 1px solid #ccc; /* Add your desired border styles */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff; /* Set your desired background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add shadow as needed */
+  }
+  
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-section {
+    min-width: 250px;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  .instructor-image {
+    max-width: 200px; /* Set the maximum image width */
+    height: 200px;
+    border: 1px solid #ccc; /* Add your desired border styles */
+    border-radius: 50%; /* Make the image circular */
+    overflow: hidden;
+  }
+  
+  .instructor-info {
+    text-align: left;
+  }
+  
+  .instructor-name {
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .instructor-description {
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  .right-section {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .service-title {
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .service-description {
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  .contact-title {
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 10px;
+  }
+  
+  .contact-section {
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  .actions-section {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .rate-button,
+  .favorite-button {
+    font-size: 18px; /* Adjust font size as needed */
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #007bff; /* Set your desired button background color */
+    color: #fff; /* Set button text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .favorite-button {
+    background-color: #28a745; /* Set your desired background color for the favorite button */
+  }

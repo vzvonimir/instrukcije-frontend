@@ -1,0 +1,13 @@
+.star-empty {
+    color: gray;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 4px;
+  }
+  
+  .star-filled {
+    color: gold;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 4px;
+  }

@@ -9,6 +9,7 @@ import ChangePassword from '../components/ChangePassword';
 import Services from '../components/services/Services';
 import AddService from '../components/services/AddService';
 import EditService from '../components/services/EditService';
+import Favorites from '../components/Favorites';
 
 function Profile() {
   const location = useLocation();
@@ -60,6 +61,7 @@ function Profile() {
               <Route path="/services" element={<Services />} />
               <Route path="/services/new" element={<AddService />} />
               <Route path="/services/:serviceId" element={<EditService />} />
+              <Route path="/favorites" element={<Favorites />} />
             </Routes>
           </div>
         </div>

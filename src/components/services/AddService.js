@@ -91,7 +91,7 @@ function AddService() {
           </div>
           <div className="row mb-3">
             <label htmlFor="price" className="col-sm-3 col-form-label">
-                Price:
+                Price per 1h:
             </label>
             <div className="col-sm-9">
                 <input
