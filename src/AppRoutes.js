@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Profile from './pages/Profile';
 import AdminPanel from './pages/AdminPanel';
 import ViewDetails from "./components/ViewDetails";
+import ResetPassword from "./pages/ResetPassword";
 
 function AppRoutes(){
     return (
@@ -18,6 +19,7 @@ function AppRoutes(){
                 <Route path="/profile/*" element={<Profile />} />
                 <Route path="/admin-panel/*" element={<AdminPanel />} />
                 <Route path="/view/:serviceId" element={<ViewDetails />} />
+                <Route path="/resetpassword" element={<ResetPassword />} />
             </Routes>
         </Router>
     );
